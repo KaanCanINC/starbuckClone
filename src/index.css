@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    background-color: #f7f7f7f7;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: -0.014rem;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block rounded-[3.125rem] border bg-primary px-[16px] py-[7px] text-center text-xl font-semibold text-[#fff] hover:bg-primary-hover active:scale-95 active:transition-transform;
+  }
+  .btn-secondary {
+    @apply inline-block rounded-[3.125rem] border bg-secondary px-[16px] py-[7px] text-center text-xl font-semibold text-[#fff] hover:bg-secondary-hover active:scale-95 active:transition-transform;
+  }
+  .btn-secondary-outlined {
+    @apply inline-block rounded-[3.125rem] border border-secondary bg-none px-[16px] py-[7px] text-center text-xl font-semibold text-secondary hover:bg-outlined-hover active:scale-95 active:transition-transform;
+  }
+  .list-element {
+    @apply inline-block cursor-pointer pl-5 font-extrabold uppercase tracking-[.13rem];
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+  }
+  .navbar-btn {
+    @apply ml-4;
+  }
+
+  .navbar-shadow {
+    box-shadow:
+      0 0 2px 0 rgba(0, 0, 0, 0.24),
+      0 2px 2px 0 rgba(0, 0, 0, 0.12);
+  }
+}

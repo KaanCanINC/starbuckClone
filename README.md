@@ -1,10 +1,7 @@
-# React + Vite
+starbucks.com.tr clone with React.js and TailwindCSS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Todo's
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# starbuckClone
-# starbuckClone
+- [ ] Button component with variants
+- [ ] Homepage campaign card component
+- [ ] Create navbar and footer
