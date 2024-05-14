@@ -7,17 +7,78 @@
     font-size: 62.5%;
   }
   body {
+    margin: 0;
+    height: 100%;
     background-color: #f7f7f7f7;
-    font-size: 1.4rem;
     line-height: 2rem;
     letter-spacing: -0.014rem;
     font-weight: 400;
+    font-family: SoDoSans, sans-serif;
+    font-feature-settings: "calt";
+  }
+  @font-face {
+    font-family: "SoDoSans";
+    src: url("./assests/fonts/SoDoSans-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "SoDoSans";
+    src: url("./assests/fonts/SoDoSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "SoDoSans";
+    src: url("./assests/fonts/SoDoSans-Light.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "SoDoSans";
+    src: url("./assests/fonts/SoDoSans-LightItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "SoDoSans";
+    src: url("./assests/fonts/SoDoSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "SoDoSans";
+    src: url("./assests/fonts/SoDoSans-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "SoDoSans";
+    src: url("./assests/fonts/SoDoSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "SoDoSans";
+    src: url("./assests/fonts/SoDoSans-SemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
   }
 }
 
 @layer components {
   .btn-primary {
     @apply inline-block rounded-[3.125rem] border bg-primary px-[16px] py-[7px] text-center text-xl font-semibold text-[#fff] hover:bg-primary-hover active:scale-95 active:transition-transform;
+  }
+  .btn-primary-outlined {
+    @apply hover:bg-primary-outlined-hover inline-block rounded-[3.125rem] border border-primary bg-none px-[16px] py-[7px] text-center text-xl font-semibold text-primary active:scale-95 active:transition-transform;
   }
   .btn-secondary {
     @apply inline-block rounded-[3.125rem] border bg-secondary px-[16px] py-[7px] text-center text-xl font-semibold text-[#fff] hover:bg-secondary-hover active:scale-95 active:transition-transform;
@@ -26,9 +87,9 @@
     @apply inline-block rounded-[3.125rem] border border-secondary bg-none px-[16px] py-[7px] text-center text-xl font-semibold text-secondary hover:bg-outlined-hover active:scale-95 active:transition-transform;
   }
   .list-element {
-    @apply inline-block cursor-pointer pl-5 font-extrabold uppercase tracking-[.13rem];
-    font-size: 1.3rem;
+    @apply m-2 inline-block cursor-pointer uppercase !tracking-[.11rem];
     line-height: 2.1rem;
+    font-weight: 800 !important;
   }
   .navbar-btn {
     @apply ml-4;
@@ -38,5 +99,11 @@
     box-shadow:
       0 0 2px 0 rgba(0, 0, 0, 0.24),
       0 2px 2px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .video-shadow {
+    box-shadow:
+      0 0 2px 0 rgba(0, 0, 0, 0.24),
+      0 4px 4px 0 rgba(0, 0, 0, 0.12);
   }
 }

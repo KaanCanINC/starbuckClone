@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import Button from "./Button";
 export default function Navbar() {
   return (
-    <header className="navbar-shadow fixed left-0 top-0 inline-flex w-screen items-center justify-between px-[4.8rem] py-7">
+    <header className="navbar-shadow fixed left-0 top-0 z-10 inline-flex w-screen items-center justify-between bg-white px-[4.8rem] py-6">
       <ul className="inline-flex items-center">
         <li className="h-[50px] w-[50px]">
           <Link to={"/"}>
@@ -14,29 +14,41 @@ export default function Navbar() {
             />
           </Link>
         </li>
-        <li className="list-element">Starbucks Rewards</li>
-        <li className="list-element">Menü</li>
-        <li className="list-element">Kampanyalar</li>
-        <li className="list-element">E-Gift</li>
-        <li className="list-element">Kurumsal Satış</li>
+        <li className="pl-6">
+          <Link to={"/"} className="list-element">
+            Starbucks Rewards
+          </Link>
+        </li>
+        <li className="pl-6 ">
+          <Link className="list-element">Menü</Link>
+        </li>
+        <li className="pl-6 ">
+          <Link className="list-element">Kampanyalar</Link>
+        </li>
+        <li className="pl-6 ">
+          <Link className="list-element">E-Gift</Link>
+        </li>
+        <li className="pl-6 ">
+          <Link className="list-element">KURUMSAL ÇÖZÜMLER</Link>
+        </li>
       </ul>
       <ul className="inline-flex items-center">
         <li className="">
-          <a href="" className="inline-flex items-center font-extrabold">
+          <Link className="inline-flex items-center text-2xl font-extrabold">
             <span className="mr-2">
-              <FaLocationDot />
+              <FaLocationDot className="h-8 w-8" />
             </span>
             Mağazalarımız
-          </a>
+          </Link>
         </li>
-        <li className="">
-          <Button className="btn-primary navbar-btn">Alışverişe Başla</Button>
+        <li className="ml-4">
+          <Button variant={"primary"}>Alışverişe Başla</Button>
         </li>
-        <li className="ml-10">
-          <Button className="btn-secondary-outlined navbar-btn">Giriş</Button>
+        <li className="navbar-btn !ml-[40px]">
+          <Button variant="secondary-outlined">Giriş</Button>
         </li>
-        <li>
-          <Button className="btn-secondary navbar-btn">Hemen Katıl</Button>
+        <li className="navbar-btn">
+          <Button variant="secondary">Hemen Katıl</Button>
         </li>
       </ul>
     </header>
