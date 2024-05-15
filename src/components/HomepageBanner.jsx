@@ -9,9 +9,9 @@ const HomepageBanner = () => {
           className="max-w-full"
         />
       </div>
-      <div className="px-16 py-8">
+      <div className="p-[10px] lg:px-16 lg:py-8">
         <h1 className=" my-11 text-sb-3xl font-normal">
-          STARBUCKS®’A YAZ GELDİİİ!
+          STARBUCKS®’A YAZ GELDİİİ!☀️{" "}
         </h1>
         <p className="my-[14px] text-card-color">
           Bu yazın YENİ soğuk kahve trendlerini birlikte keşfedelim mi? 😎

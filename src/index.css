@@ -75,24 +75,24 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-block rounded-[3.125rem] border bg-primary px-[16px] py-[7px] text-center text-xl font-semibold text-[#fff] hover:bg-primary-hover active:scale-95 active:transition-transform;
+    @apply inline-block rounded-[3.125rem] border bg-primary px-[16px] py-[7px] text-center text-sb-xl font-semibold text-[#fff] hover:bg-primary-hover active:scale-95 active:transition-transform;
   }
   .btn-primary-outlined {
-    @apply hover:bg-primary-outlined-hover inline-block rounded-[3.125rem] border border-primary bg-none px-[16px] py-[7px] text-center text-xl font-semibold text-primary active:scale-95 active:transition-transform;
+    @apply inline-block rounded-[3.125rem] border border-primary bg-none px-[16px] py-[7px] text-center text-sb-xl font-semibold text-primary hover:bg-primary-outlined-hover active:scale-95 active:transition-transform;
   }
   .btn-secondary {
-    @apply inline-block rounded-[3.125rem] border bg-secondary px-[16px] py-[7px] text-center text-xl font-semibold text-[#fff] hover:bg-secondary-hover active:scale-95 active:transition-transform;
+    @apply inline-block rounded-[3.125rem] border bg-secondary px-[16px] py-[7px] text-center text-sb-xl font-semibold text-[#fff] hover:bg-secondary-hover active:scale-95 active:transition-transform;
   }
   .btn-secondary-outlined {
-    @apply inline-block rounded-[3.125rem] border border-secondary bg-none px-[16px] py-[7px] text-center text-xl font-semibold text-secondary hover:bg-outlined-hover active:scale-95 active:transition-transform;
+    @apply inline-block rounded-[3.125rem] border border-secondary bg-none px-[16px] py-[7px] text-center text-sb-xl font-semibold text-secondary hover:bg-outlined-hover active:scale-95 active:transition-transform;
   }
   .list-element {
-    @apply m-2 inline-block cursor-pointer uppercase !tracking-[.11rem];
+    @apply inline-block cursor-pointer pl-[1.2rem] uppercase !tracking-[.11rem];
     line-height: 2.1rem;
     font-weight: 800 !important;
   }
   .navbar-btn {
-    @apply ml-4;
+    @apply ml-[1.6rem];
   }
 
   .navbar-shadow {

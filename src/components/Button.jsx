@@ -1,4 +1,4 @@
-const Button = ({ children, variant, className }) => {
+const Button = ({ children, variant, className = "" }) => {
   const styles = {
     primary: "btn-primary",
     secondary: "btn-secondary",
