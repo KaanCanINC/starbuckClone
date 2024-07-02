@@ -87,10 +87,16 @@
     @apply inline-block rounded-[3.125rem] border border-secondary bg-none px-[16px] py-[7px] text-center text-sb-xl font-semibold text-secondary hover:bg-outlined-hover active:scale-95 active:transition-transform;
   }
   .list-element {
-    @apply inline-block cursor-pointer pl-[1.2rem] uppercase !tracking-[.11rem];
+    @apply inline-block cursor-pointer !pl-[1.2rem] uppercase !tracking-[.11rem];
     line-height: 2.1rem;
     font-weight: 800 !important;
   }
+  .list-item {
+    @apply m-[.4rem] py-[.8rem];
+    line-height: 2.1rem;
+    font-size: 1.3rem;
+  }
+
   .navbar-btn {
     @apply ml-[1.6rem];
   }

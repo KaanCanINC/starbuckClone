@@ -10,7 +10,7 @@ const HomepageBanner = () => {
         />
       </div>
       <div className="p-[10px] lg:px-16 lg:py-8">
-        <h1 className=" my-11 text-sb-3xl font-normal">
+        <h1 className=" my-11 text-sb-4xl font-normal">
           STARBUCKS®’A YAZ GELDİİİ!☀️{" "}
         </h1>
         <p className="my-[14px] text-card-color">
